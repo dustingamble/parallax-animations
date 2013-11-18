@@ -1,0 +1,219 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #050505;
+  background-image: url('../images/background1.png');
+  color: #fff;
+  font-size: 1em;
+  font-family: 'Montserrat', 'Arial Black', 'Arial Bold', Gadget, sans-serif;
+}
+.container {
+  margin: 0 auto;
+  padding: 50px 0px;
+  width: 80%;
+  text-align: center;
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+a:link {
+  color: #f7e543;
+  text-decoration: none;
+}
+a:hover {
+  color: #b3a208;
+  text-decoration: none;
+}
+a:visited {
+  color: #f7e543;
+  text-decoration: none;
+}
+p {
+  font-size: 1em;
+  margin-bottom: 1.5em;
+  line-height: 1.5em;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 700;
+  line-height: 1em;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  margin-bottom: 1.5em;
+}
+h1 {
+  font-size: 2.3em;
+}
+h2 {
+  font-size: 1.8em;
+}
+h3 {
+  font-size: 1.5em;
+}
+h4 {
+  font-size: 1.2em;
+}
+
+section.showcase {
+  margin: 50px 0;
+}
+
+.block {
+  display: block;
+  height: 200px;
+  width: 200px;
+  padding: 90px 0px;
+  margin: 50px auto;
+  background-color: #2ecc71;
+}
+
+
+.translate:hover {
+  transform: translate(250px, 250px);
+  -webkit-transform: translate(250px, 250px);
+}
+
+.rotate:hover {
+  transform: rotate(90deg);
+  -webkit-transform: rotate(32deg);
+}
+
+.scale:hover {
+  transform: scale(6, 0.25);
+  -webkit-transform: scale(6, 0.25);
+}
+
+.skew:hover {
+  transform: skew(60deg, -10deg);
+  -webkit-transform: skew(60deg, -10deg);
+}
+
+.rotatex {
+  transition: all 1s linear; 
+}
+
+.rotatex:hover {
+  transform: rotateX(130deg);
+  -webkit-transform: rotateX(130deg);
+}
+
+.rotatey {
+  transition: all 1s linear; 
+}
+
+.rotatey:hover {
+  transform: rotateY(270deg);
+  -webkit-transform: rotateY(270deg);
+}
+
+.rotatez {
+  transition: all 1s linear; 
+}
+
+.rotatez:hover {
+  transform: rotateZ(170deg);
+  -webkit-transform: rotateZ(170deg);
+}
+
+.rotate3d {
+  transition: all 1s linear; 
+}
+
+.rotate3d:hover {
+  transform: rotate3d(180,120,270, 270deg);
+  -webkit-transform: rotate3d(180,120,270, 270deg);
+}
+
+.lightsout {
+  animation: lightsout 3s infinite alternate;
+  -webkit-animation: lightsout 3s infinite alternate;
+}
+
+@keyframes lightsout {
+  from {background-color:#e74c3c;}
+  to {background-color:#000;}
+}
+
+@-webkit-keyframes lightsout {
+  from {background-color:#e74c3c;}
+  to {background-color:#000;}
+}
+
+.barrelroll {
+  animation: barrelroll 3s infinite alternate;
+  -webkit-animation: barrelroll 3s infinite alternate;
+}
+@keyframes barrelroll {
+  from { transform:rotate(0deg); }
+  to {transform:rotate(270deg); }
+}
+@-webkit-keyframes barrelroll {
+  from { -webkit-transform:rotate(0deg); }
+  to { -webkit-transform:rotate(270deg); }
+}
+
+.swing {
+  position: relative;
+  animation: swing 4s infinte alternate;
+  -webkit-animation: swing 4s infinte alternate;
+}
+@keyframes swing {
+  0% {
+     background-color:#e74c3c;
+     transform: rotate3d(180, 120, 70, 130deg);
+     left:-300px;
+     top:-100px;
+  }
+  50% {
+    background-color:#4d4d4d;
+    transform: rotate3d(0, 90, 360, 0deg);
+    transform: scale3d(2,2,2);
+    left: 0px;
+    top: 50px;
+  }
+  100% {
+    background-color:#666666;
+    transform: rotate3d(180, 270, 180, -180deg);
+    left: 300px;
+    top: -100px;
+  }
+}
+@-webkit-keyframes swing {
+  0% {
+    background-color:#e74c3c;
+    -webkit-transform: rotate3d(180, 120, 70, 130deg);
+    left:-300px;
+    top:-100px;
+  }
+  50% {
+    background-color:#4d4d4d;
+    -webkit-transform: rotate3d(0, 90, 360, 0deg);
+    -webkit-transform: scale3d(2,2,2);
+    left: 0px;
+    top: 50px;
+  }
+  100% {
+    background-color:#666666;
+    -webkit-transform: rotate3d(180, 270, 180, -180deg);
+    left: 300px;
+    top: -100px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
